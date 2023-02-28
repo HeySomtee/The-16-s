@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    overflow: hidden;
+    /* box-sizing: border-box; */
+    background: #c3f706;
+    margin: 0%;
+}
+
+
+#title{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.text1{
+    position: absolute;
+    z-index: 1;
+}
+
+.background{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+}
+
+.xx{
+    width: 250px;
+    height: 100vh;
+}
+
+
+
+.hidden{
+    width: 200px;
+    height:200px;
+    display: grid;
+    place-content: center;
+    animation: 1s forwards;
+}
+
+@keyframes shift{
+    0%{
+        position: relative;
+    }
+    
+    100%{
+        position: absolute;
+        margin-left: 40px;
+    }
+}
+
+@keyframes shift1{
+    0%{
+        
+        position: absolute;
+    }
+    
+    100%{
+        position: relative;
+        
+    }
+}
+
+.hidden i{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+    animation: 1s forwards;
+    /* bottom: 0;
+    right: 0; */
+}
+
+svg{
+    width: 50px;
+    padding: 20px;
+    border-radius: 50%;
+    animation: color-change 5s infinite;
+    background-color: red;
+}
+
+@keyframes color-change {
+    0%{
+        background-color: red;
+    }
+
+    20%{
+        background-color: blueviolet;
+    }
+
+    40%{
+        background-color: white;
+    }
+
+    60%{
+        background-color: yellow;
+    }
+
+    80%{
+        background-color: aqua;
+    }
+
+    100%{
+        background-color: darkorange;
+    }
+}
+
+#foot{
+    margin-left: 20px;
+    margin-top: -20vh;
+    position: absolute;
+}
+
+.hidden div{
+    position: absolute;
+}
+
+#display{
+    display: non;
+}
+
+#nav{
+    opacity: 0;
+    background-color: #6c8808;
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+}
+
+.hidden img{
+    width: 150px;
+    position: absolute;
+    animation:  1.5s forwards;
+    /* */
+   
+}
+
+@keyframes move-right{
+    0%{
+        margin-left: none;
+    }
+
+    100%{
+        margin-left: 40px; 
+    }
+}
+
+#aboutDiv{
+    position: absolute;
+    z-index: 3;
+    width: 115vw;
+    height: 100vh;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);    margin-top: 150vh;
+    animation: 2s forwards;
+    overflow: hidden;
+    
+}
+
+.imgg{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.fa-close{
+    font-size: 50px;
+    margin: 10px;
+    position: relative;
+    z-index: 4;
+    /* animation: pull 2s forwards; */
+}
+
+
+.h2{
+    font-family: 'Mynerve', cursive;
+    position: absolute;
+    margin-left: 100px;
+}
+
+.somtee{
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes pull {
+    0%{
+        margin-top: 0;
+    }
+   
+    100%{
+        margin-top: 150vh;
+    }
+}
+
+@keyframes push{
+    100%{
+        margin-top: 0;
+    }
+
+    
+}
+
+@media screen and (max-width: 580px) {
+
+    body{
+        /* background-color: antiquewhite; */
+        overflow: hidden;
+        /* display: none; */
+    }
+
+    .root{
+        /* background-color: black; */
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    /* #title{
+        width: 100vw;
+        height: 100vh;
+        background-color: aliceblue;
+        overflow: hidden;
+        
+    } */
+}
